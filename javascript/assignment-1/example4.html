@@ -1,0 +1,26 @@
+/*
+4. Collect information from the user and store in a variable for later user.
+o Create a basic page in HTML.
+o Using a prompt box, prompt the user to supply his or her name.
+o Save the name in a variable.
+o Then, using a document.write() statement, use the information stored in variables
+to display Hello username! in big, bold letters, i.e. surrounded by <h1> tags.
+o username should, of course, be what the user actually typed into the prompt box.
+Using the same variable, also, display Hello username! in an alert message on the same
+page.
+Final result: When the page loads, the user is prompted for his or her name. That name is
+then immediately displayed as Hello username! in an alert message, and then
+should immediately display as Hello username! in the page.
+*/
+<html>
+	<head>
+<script>
+	var input = prompt('Enter User Name');
+	alert("Hello " + input);
+	var Result ="<h1>Hello " + input + "</h1>";
+	document.write(Result);
+</script>
+</head>
+	<body>
+	</body>
+</html>
