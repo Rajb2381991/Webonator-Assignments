@@ -1,0 +1,79 @@
+/*
+7. Write a JavaScript program which computes, the average marks of the following
+students Then, this average is used to determine the corresponding grade.
+Student Name Marks
+David 80
+Vinoth 77
+Divya 88
+Ishitha 95
+Thomas 68
+
+The grades are computed as follows:
+
+Range Grade
+<60 F
+<70 D
+<80 C
+<90 B
+<100 A
+*/
+<html>
+	<script>
+	var StudentRecords = 
+	[
+		{
+			name : 'David',
+			marks : '80'
+		},
+		{
+			name : 'Vinoth',
+			marks : '77'
+		},
+		{
+			name : 'Divya',
+			marks : '88'
+		},
+		{
+			name : 'Ishitha',
+			marks : '95'
+		},
+		{
+			name : 'Thomas',
+			marks : '68'
+		}
+	];
+	var i = 0;
+	document.write("<table style='border:1px solid black;padding:20px;cellspacing:10px;border-radius:20px;'><tr><th>Name</th><th>Marks</th><th>Range</th><th>Grade</th></tr>");
+	for(i=0;i<StudentRecords.length;i++)
+	{
+		if( StudentRecords[i].marks < 60 )
+		{
+			document.write("<tr><td>"+StudentRecords[i].name +"</td><td>"+StudentRecords[i].marks+"</td>" + 
+			"<td><60</td><td>F</td></tr>");
+		}
+		else if( StudentRecords[i].marks < 70 )
+		{
+			document.write("<tr><td>"+StudentRecords[i].name +"</td><td>"+StudentRecords[i].marks+"</td><td>"+
+			"<70</td><td>D</td></tr>");
+		}
+		else if( StudentRecords[i].marks < 80 )
+		{
+			document.write("<tr><td>"+StudentRecords[i].name +"</td><td>"+StudentRecords[i].marks+"</td><td>"+
+			"<80</td><td>C</td></tr>");	
+		}
+		else if( StudentRecords[i].marks < 90 )
+		{
+			document.write("<tr><td>"+StudentRecords[i].name +"</td><td>"+StudentRecords[i].marks+"</td><td>"+
+			"<90</td><td>B</td></tr>");
+		}
+		else if( StudentRecords[i].marks < 100 )
+		{
+			document.write("<tr><td>"+StudentRecords[i].name +"</td><td>"+StudentRecords[i].marks+"</td><td>"+
+			"<100</td><td>A</td></tr>");
+		}
+		
+	}
+	document.write("</table>");
+	</script>
+</html>
+
