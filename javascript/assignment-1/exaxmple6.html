@@ -1,0 +1,31 @@
+/*
+5. Create a "Mad-libs" game using JavaScript.
+ Create a blank page.
+ Using a prompt box, prompt the user to supply his or her name.
+ Then, using 5 additional prompt boxes, prompt the user to supply 5 words.
+ Save each word in a separate variable.
+ Then, using document.write() statements, use the information stored in variables to display
+a "Mad-libs" type of story, i.e. create a few paragraphs of information in story format.
+ Also, prompt the user for a color (i.e. one of the 16 named colors or a hex value).
+ Store this color in a variable.
+ In the "mad libs" story, highlight, using the color supplied by the user, each of the words that
+you previously collected. Do this by surrounding the words with <div> tags and using an
+inline style.
+*/
+
+<html>
+	<head>
+<script>
+	var promptInput= new Array();
+	for(var i=0;i<5;i++)
+	{
+		promptInput[i] = prompt("Enter words to complete  The Paragraph");
+	}
+		var input = "<br><br>We have open culture in Webonise Lab, people are too "+promptInput[4]+".<br>" + 
+		""+promptInput[4]+" is just like another family.<br>" + 
+		"Awesome platform for "+promptInput[4]+" to start.<br>" + 
+		"You will get tremendous "+promptInput[4]+" in very less time.<br>"+
+		+promptInput[4]+ hours are form morning 10 to 7.<br>";
+		document.write(input);
+</script>
+</html>
